@@ -10,6 +10,7 @@ import Customers from './pages/Customers';
 import Queries from './pages/Queries';
 import SiteContent from './pages/SiteContent';
 import Testimonials from './pages/Testimonials';
+import Coupons from './pages/Coupons';
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useAuth();
@@ -40,6 +41,7 @@ function App() {
         <Route path="courses" element={<Courses />} />
         <Route path="courses/new" element={<CourseForm />} />
         <Route path="courses/edit/:id" element={<CourseForm />} />
+        <Route path="coupons" element={<Coupons />} />
         <Route path="customers" element={<Customers />} />
         <Route path="queries" element={<Queries />} />
         <Route path="site-content" element={<SiteContent />} />
