@@ -8,7 +8,8 @@ import {
   LogOut,
   GraduationCap,
   Settings,
-  Video
+  Video,
+  TicketPercent
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
@@ -16,6 +17,7 @@ const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/platforms', icon: Layers, label: 'Platforms' },
   { to: '/courses', icon: BookOpen, label: 'Courses' },
+  { to: '/coupons', icon: TicketPercent, label: 'Coupons' },
   { to: '/customers', icon: Users, label: 'Customers' },
   { to: '/queries', icon: MessageSquare, label: 'Queries' },
   { to: '/site-content', icon: Settings, label: 'Website Content' },
